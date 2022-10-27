@@ -23,13 +23,11 @@ protected:
 
 private:
 	FVector CurrentMovementVector = FVector::ZeroVector;
+	APawn* OwnerPawn = nullptr;
 
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
-		
-	APawn* OwnerPawn = nullptr;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Settings")
 	float MovementSpeed = 100.f;
