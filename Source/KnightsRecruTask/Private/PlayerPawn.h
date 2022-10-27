@@ -33,10 +33,10 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	UCameraComponent* MainCamera = nullptr;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="Settings")
-	float MovementSpeed = 100.f;
+	//UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="Settings")
+	//float MovementSpeed = 100.f;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Internal")
-	FVector CurrentMovementVector;
+	//UPROPERTY(BlueprintReadWrite, Category = "Internal")
+	//FVector CurrentMovementVector;
 
 };
