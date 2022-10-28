@@ -3,15 +3,15 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/PlayerController.h"
-#include "PlayerControllerMain.generated.h"
+#include "GameFramework/PlayerState.h"
+#include "PlayerStateMain.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class APlayerControllerMain : public APlayerController
+class APlayerStateMain : public APlayerState
 {
 	GENERATED_BODY()
-
+	
 };
