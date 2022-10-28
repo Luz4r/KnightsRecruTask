@@ -3,3 +3,6 @@
 
 #include "PlayerControllerMain.h"
 
+bool APlayerControllerMain::IsInsideSelectionBox(FVector2D point)
+{
+}

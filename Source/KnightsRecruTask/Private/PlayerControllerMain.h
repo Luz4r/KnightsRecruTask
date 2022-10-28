@@ -13,5 +13,6 @@ UCLASS()
 class APlayerControllerMain : public APlayerController
 {
 	GENERATED_BODY()
-	
+
+	bool IsInsideSelectionBox(FVector2D point);
 };
