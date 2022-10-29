@@ -31,4 +31,10 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Settings")
 	float MovementSpeed = 100.f;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Movement")
+	FVector DestinationWorldLocation = FVector::ZeroVector;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Movement")
+	bool bIsMovingToDestination = false;
 };
