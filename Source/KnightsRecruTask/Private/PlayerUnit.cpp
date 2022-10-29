@@ -26,21 +26,6 @@ void APlayerUnit::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (bIsMovingToDestination)
-	{
-		FVector Direction = DestinationWorldLocation - this->GetActorLocation();
-		Direction.Normalize();
-		Direction.Z = 0.f;
-
-		FHitResult HitResult;
-
-		this->AddActorWorldOffset(Direction * MovementSpeed * DeltaTime, true, &HitResult);
-
-		if ((HitResult.bBlockingHit) || Direction.Equals(FVector::ZeroVector))
-		{
-			bIsMovingToDestination = false;
-			UE_LOG(LogTemp, Warning, TEXT("Finished Movement"))
-		}
-	}
+	
 }
 
